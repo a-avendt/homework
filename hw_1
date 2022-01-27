@@ -1,0 +1,27 @@
+## 1
+numbers = list(range(30, 65, 5))
+print(numbers)
+print(numbers[::-1])
+numbers.append(65)
+print(numbers[::-1])
+
+## 2
+nums = []
+nums = list(range(21))
+print(nums)
+nums.remove(0)
+print(nums)
+print("Length =", len(nums))
+print("Maximum value =", max(nums))
+print("Minimum value =", min(nums))
+sum(nums)
+
+## 3
+mydict = {"sunny" : "play", "rainy" : "watch TV", "cloudy" : "walk"}
+print(mydict)
+for weather, activity in mydict.items():
+    print("When ", weather, "let us ", activity)
+mydict.update({"snowy": "ski"})
+print(mydict)
+for weather, activity in mydict.items():
+    print("When ", weather, "let us ", activity)
